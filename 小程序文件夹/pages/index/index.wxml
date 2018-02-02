@@ -1,0 +1,79 @@
+<!-- 导航 -->
+<view class='index-nav pos-r'>
+    <navigator url='' class='on'><em></em>新闻</navigator>
+    <navigator url=''>视频</navigator>
+    <navigator url=''>活动</navigator>
+    <navigator url=''>3D改装</navigator>
+    <navigator url='' class='index-ss'><image src='../../images/index-ss.png'></image></navigator>
+</view>
+<!-- 首页新闻列表 -->
+<view wx:for="{{index_news}}" class='index_news'>
+    <navigator url='{{item.a}}'>
+        <image src='{{item.img}}'></image>
+    </navigator>
+    <navigator url='{{item.a}}' class='tong'>
+        <view class='jd bt'>{{item.bt}}</view>
+        <view class='a1'>{{item.a1}}
+            <span wx:if="{{item.bool}}">推荐</span>
+        </view>
+        <view class='a2 ov'>{{item.a2}}</view>
+    </navigator>
+    <view class='tong index_news_f'>
+        <view class='index_news_like fl a3 {{item.index_dz}}' hover-class="none">{{item.dz}}</view>
+        <navigator class='fl a3 comment' url='{{item.index_news_com}}'>评论</navigator>
+        <view class='fr a3 share' bindtap="fenxiang1">分享</view>
+        <navigator class='fr a3 forward' url='{{item.index_news_for}}'>转发</navigator>
+    </view>
+    <view class='index_h'></view>
+</view>
+<!-- 分享弹出层 -->
+<block wx:if="{{fenxiang}}">
+<view class='index_news_fx_k' bindtap='fx_t'></view>
+<view class='index_news_fx'>
+    <view class='a1'>分享至</view>
+      <view class='a21'>
+        <image src='http://yutingdq.gotoip4.com/xpx/index_news_f1.jpg' class='img1'></image>
+        朋友圈
+      </view>
+      <view class='a21'>
+        <image src='http://yutingdq.gotoip4.com/xpx/index_news_f2.jpg' class='img2'></image>
+          微信好友
+      </view>
+</view>
+</block>
+
+<!-- 底部文件 -->
+<view class='foot-k'></view>
+<view class='foot'>
+  <view class='on'>
+    <navigator url='../logs/logs'>
+      <image src='../../images/foot1.jpg' class='img1'></image>
+      <image src='../../images/foot11.jpg' class='img2'></image>
+      文化
+    </navigator>
+  </view>
+  <view>
+    <navigator url='../logs/logs'>
+      <image src='../../images/foot2.jpg' class='img1'></image>
+      <image src='../../images/foot22.jpg' class='img2'></image>
+      案例
+    </navigator>
+  </view>
+  <view>
+    <navigator url='../logs/logs'>
+      <image src='../../images/foot3.jpg' class='img1'></image>
+      <image src='../../images/foot33.jpg' class='img2'></image>
+      连锁
+    </navigator>
+  </view>
+  <view>
+    <navigator url='../logs/logs'>
+      <image src='../../images/foot4.jpg' class='img1'></image>
+      <image src='../../images/foot44.jpg' class='img2'></image>
+      我的
+    </navigator>
+  </view>
+</view>
+
+
+
