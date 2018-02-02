@@ -1,6 +1,0 @@
-/* 新闻详情图片 */
-.news_det_img{width: 100%;height: 425rpx;}
-.news_det_bt{font-size: 30rpx;color: #2c2c2c;line-height: 48rpx;margin: 21rpx 0 0;}
-
-
-

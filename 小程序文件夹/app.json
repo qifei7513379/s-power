@@ -1,8 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/news_details/news_details"
+    "pages/anli/anli",
+    "pages/liansuo/liansuo",
+    "pages/private/private"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -10,5 +11,35 @@
     "navigationBarTitleText": "S-POWER",
     "navigationBarTextStyle":"black",
     "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "文化",
+        "iconPath":"images/foot1.jpg",
+        "selectedIconPath":"images/foot11.jpg"
+      },
+      {
+        "pagePath": "pages/anli/anli",
+        "text": "案例",
+        "iconPath": "images/foot2.jpg",
+        "selectedIconPath": "images/foot22.jpg"
+      },
+      {
+        "pagePath": "pages/liansuo/liansuo",
+        "text": "连锁",
+        "iconPath": "images/foot3.jpg",
+        "selectedIconPath": "images/foot33.jpg"
+      },
+      {
+        "pagePath": "pages/private/private",
+        "text": "我的",
+        "iconPath": "images/foot4.jpg",
+        "selectedIconPath": "images/foot44.jpg"
+      }
+    ],
+    "color": "#7c7c7c",
+    "selectedColor":"#232323"
   }
 }

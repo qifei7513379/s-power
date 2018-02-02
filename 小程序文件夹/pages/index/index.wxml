@@ -7,7 +7,7 @@
     <navigator url='' class='index-ss'><image src='../../images/index-ss.png'></image></navigator>
 </view>
 <!-- 首页新闻列表 -->
-<view wx:for="{{index_news}}" class='index_news'>
+<view wx:for="{{index_news}}" class='index_news' wx:key="{{uniqu}}">
     <navigator url='{{item.a}}'>
         <image src='{{item.img}}'></image>
     </navigator>
@@ -41,39 +41,3 @@
       </view>
 </view>
 </block>
-
-<!-- 底部文件 -->
-<view class='foot-k'></view>
-<view class='foot'>
-  <view class='on'>
-    <navigator url='../logs/logs'>
-      <image src='../../images/foot1.jpg' class='img1'></image>
-      <image src='../../images/foot11.jpg' class='img2'></image>
-      文化
-    </navigator>
-  </view>
-  <view>
-    <navigator url='../logs/logs'>
-      <image src='../../images/foot2.jpg' class='img1'></image>
-      <image src='../../images/foot22.jpg' class='img2'></image>
-      案例
-    </navigator>
-  </view>
-  <view>
-    <navigator url='../logs/logs'>
-      <image src='../../images/foot3.jpg' class='img1'></image>
-      <image src='../../images/foot33.jpg' class='img2'></image>
-      连锁
-    </navigator>
-  </view>
-  <view>
-    <navigator url='../logs/logs'>
-      <image src='../../images/foot4.jpg' class='img1'></image>
-      <image src='../../images/foot44.jpg' class='img2'></image>
-      我的
-    </navigator>
-  </view>
-</view>
-
-
-
