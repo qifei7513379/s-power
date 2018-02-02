@@ -9,21 +9,12 @@
 .tong{padding: 0 33rpx;overflow: hidden;}
 /* 首页导航 */
 .index-nav{background: #2f2f2f;display: -webkit-box;display: -webkit-flex;display: flex;padding: 0 10% 0 0;}
-.index-nav navigator{font-size: 30rpx;color: #b2b2b2;line-height: 98rpx;-webkit-flex:1;flex:1;-webkit-box-flex:1;text-align: center;display: block;position: relative;}
+.index-nav>view{font-size: 30rpx;color: #b2b2b2;line-height: 98rpx;-webkit-flex:1;flex:1;-webkit-box-flex:1;text-align: center;display: block;position: relative;}
 .index-nav .on{color: #ffffff;}
-.index-nav em{display: block;width: 20rpx;height: 4rpx;background: #ffba00;border-radius: 1rpx;position: absolute;bottom: 18rpx;left: 50%;margin-left: -10rpx;}
-
+.index-nav .on:after{content:"";display: block;width: 20rpx;height: 4rpx;background: #ffba00;border-radius: 1rpx;position: absolute;bottom: 18rpx;left: 50%;margin-left: -10rpx;}
 .index-ss{position: absolute !important;top: 0;right: 0;width: 10%;height: 98rpx;}
-.index-ss image{width: 26rpx;height: 26rpx;}
-/* 底部文件 */
-.foot-k{height: 118rpx;background: #eff0f5;}
-.foot{display: -webkit-box;display: -webkit-flex;display: flex;position: fixed;bottom: 0;left: 0;width: 100%;background: #fafafa;border-top: 1rpx solid #dedede;}
-.foot view{-webkit-flex:1;flex:1;-webkit-box-flex:1;font-size: 22rpx;color: #666666;line-height: 36rpx;text-align: center}
-.foot view image{height: 48rpx;width: 48rpx;display: block;margin:13rpx auto 0;}
-.foot view .img2{display: none;}
-.foot .on .img2{display: block;}
-.foot .on .img1{display: none;}
-.foot .on{color: #154a9e;}
+.index-ss image{width: 26rpx;height: 26rpx;display: block;margin: 36rpx auto 0 auto;}
+
 
 
 

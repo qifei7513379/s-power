@@ -1,43 +1,15 @@
 <!-- 导航 -->
 <view class='index-nav pos-r'>
-    <navigator url='' class='on'><em></em>新闻</navigator>
-    <navigator url=''>视频</navigator>
-    <navigator url=''>活动</navigator>
-    <navigator url=''>3D改装</navigator>
-    <navigator url='' class='index-ss'><image src='../../images/index-ss.png'></image></navigator>
+    <view url='' class='{{_num==1?"on":""}}' bindtap='clicktab' data-num="1" data-temp="news">新闻</view>
+    <view url='' class='{{_num==2?"on":""}}' bindtap='clicktab' data-num="2" data-temp="video">视频</view>
+    <view url='' class='{{_num==3?"on":""}}' bindtap='clicktab' data-num="3" data-temp="active">活动</view>
+    <view url='' class='{{_num==4?"on":""}}' bindtap='clicktab' data-num="4" data-temp="3d">3D改装</view>
+    <navigator url='/pages/search/search' class='index-ss'><image src='../../images/index-ss.png'></image></navigator>
 </view>
-<!-- 首页新闻列表 -->
-<view wx:for="{{index_news}}" class='index_news' wx:key="{{uniqu}}">
-    <navigator url='{{item.a}}'>
-        <image src='{{item.img}}'></image>
-    </navigator>
-    <navigator url='{{item.a}}' class='tong'>
-        <view class='jd bt'>{{item.bt}}</view>
-        <view class='a1'>{{item.a1}}
-            <span wx:if="{{item.bool}}">推荐</span>
-        </view>
-        <view class='a2 ov'>{{item.a2}}</view>
-    </navigator>
-    <view class='tong index_news_f'>
-        <view class='index_news_like fl a3 {{item.index_dz}}' hover-class="none">{{item.dz}}</view>
-        <navigator class='fl a3 comment' url='{{item.index_news_com}}'>评论</navigator>
-        <view class='fr a3 share' bindtap="fenxiang1">分享</view>
-        <navigator class='fr a3 forward' url='{{item.index_news_for}}'>转发</navigator>
-    </view>
-    <view class='index_h'></view>
+
+<!--模块  -->
+<import src="../template-wenhua/template-wenhua.wxml"/>
+
+<view class="container">
+     <template is="{{temp}}" data="{{index_news,fenxiang}}"></template>
 </view>
-<!-- 分享弹出层 -->
-<block wx:if="{{fenxiang}}">
-<view class='index_news_fx_k' bindtap='fx_t'></view>
-<view class='index_news_fx'>
-    <view class='a1'>分享至</view>
-      <view class='a21'>
-        <image src='http://yutingdq.gotoip4.com/xpx/index_news_f1.jpg' class='img1'></image>
-        朋友圈
-      </view>
-      <view class='a21'>
-        <image src='http://yutingdq.gotoip4.com/xpx/index_news_f2.jpg' class='img2'></image>
-          微信好友
-      </view>
-</view>
-</block>

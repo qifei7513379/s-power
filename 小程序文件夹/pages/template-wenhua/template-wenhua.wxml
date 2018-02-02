@@ -1,0 +1,70 @@
+<template name="news">
+    <!-- 首页新闻列表 -->
+    <view wx:for="{{index_news}}" class='index_news' wx:key="{{uniqu}}">
+        <navigator url='../detail/detail'>
+            <image src='{{item.img}}'></image>
+        </navigator>
+        <navigator url='../detail/detail' class='tong'>
+            <view class='jd bt'>{{item.bt}}</view>
+            <view class='a1'>{{item.a1}}
+                <span wx:if="{{item.bool}}">推荐</span>
+            </view>
+            <view class='a2 ov'>{{item.a2}}</view>
+        </navigator>
+        <view class='tong index_news_f'>
+            <view class='index_news_like fl a3 {{item.index_dz}}' bindtap='index_dz' data-dz="{{item.dz}}">{{item.dz}}</view>
+            <navigator class='fl a3 comment' url='../detail/detail'>评论</navigator>
+            <view class='fr a3 share' bindtap="fenxiang1">分享</view>
+            <navigator class='fr a3 forward' url='{{item.index_news_for}}'>转发</navigator>
+        </view>
+        <view class='index_h'></view>
+    </view>
+    <!-- 分享弹出层 -->
+    <block wx:if="{{fenxiang}}">
+        <view class='index_news_fx_k' bindtap='fx_t'></view>
+        <view class='index_news_fx'>
+            <view class='a1'>分享至</view>
+              <view class='a21'>
+                <image src='http://yutingdq.gotoip4.com/xpx/index_news_f1.jpg' class='img1'></image>
+                朋友圈
+              </view>
+              <view class='a21'>
+                <image src='http://yutingdq.gotoip4.com/xpx/index_news_f2.jpg' class='img2'></image>
+                  微信好友
+              </view>
+        </view>
+    </block>
+</template>
+
+<template name="video">
+    <!--首页视频列表  -->
+    <view wx:for="{{index_news}}" class='index_news' wx:key="{{uniqu}}">
+        <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"  controls></video>
+        <navigator url='../detail/detail' class='tong'>
+            <view class='jd bt'>{{item.bt}}</view>
+            <view class='a1'>{{item.a1}}
+                <span wx:if="{{item.bool}}">推荐</span>
+            </view>
+            <view class='a2 ov'>{{item.a2}}</view>
+        </navigator>
+        <view class='tong index_news_f'>
+            <view class='index_news_like fl a3 {{item.index_dz}}' bindtap='index_dz' data-dz="{{item.dz}}">{{item.dz}}</view>
+            <navigator class='fl a3 comment' url='../detail/detail'>评论</navigator>
+            <view class='fr a3 share' bindtap="fenxiang1">分享</view>
+            <navigator class='fr a3 forward' url='{{item.index_news_for}}'>转发</navigator>
+        </view>
+        <view class='index_h'></view>
+    </view>
+</template>
+
+<template name="active">
+    <view class="title-box">
+        活动页面
+    </view>
+</template>
+
+<template name="3d">
+    <view class="title-box">
+        3D改装
+    </view>
+</template>

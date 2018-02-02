@@ -1,4 +1,4 @@
-//index.js
+//detail.js
 // This is our App Service.
 // This is our data.
 var helloData = {
@@ -17,9 +17,9 @@ Page({
       bool: true,
       a1: "/#性能/ 22小时前",
       a2: "和名字一样，Insane Speed汽车改装店有些疯狂，它打造了许多高性能的作品，从1000多马力的EVO和Supra到双涡轮增压的兰博基尼。",
-      uniqu:0,
+      uniqu: 0,
       index_dz: "index_dz",
-      dz: "88",
+      dz: "21",
       index_news_com: "",
       index_news_for: ""
     }, {
@@ -35,9 +35,9 @@ Page({
       index_news_com: "",
       index_news_for: ""
     }],
-    fenxiang:false,
-    _num:1,
-    temp:"news"
+    fenxiang: false,
+    _num: 1,
+    temp: "news"
   },
   // 当页面加载完成时间执行
   onLoad: function () {
@@ -53,12 +53,12 @@ Page({
       fenxiang: !this.data.fenxiang
     })
   },
-  clicktab: function(e){
+  clicktab: function (e) {
     this.setData({
-      _num:e.target.dataset.num     
+      _num: e.target.dataset.num
     })
     this.setData({
-      temp:e.target.dataset.temp
+      temp: e.target.dataset.temp
     })
   }
 });
