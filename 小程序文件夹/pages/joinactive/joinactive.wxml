@@ -1,0 +1,24 @@
+<!--pages/joinactive/joinactive.wxml-->
+<view class='joinactive'>
+  <view class='joinactive-list'> 
+    <view class='joinlist-item'><label>联系人电话</label><input placeholder='请输入联系人电话'></input></view>
+    <view class='joinlist-item'><label>联系人姓名</label><input placeholder='请输入联系人姓名'></input></view>
+    <view class='joinlist-item'>
+      <label>成人<text>￥{{price1}}</text></label>
+      <view class='zhanwei'></view>
+      <view class='count'><view bindtap='jian1'>-</view><text>{{num1}}</text><view bindtap='jia1'>+</view></view>
+    </view>
+    <view class='joinlist-item'>
+      <label>儿童<text>￥{{price2}}</text></label>
+      <view class='zhanwei'></view>
+      <view class='count'><view bindtap='jian2'>-</view><text>{{num2}}</text><view bindtap='jia2'>+</view></view>
+    </view>
+  </view>
+  <view class='info'>最少1人起订，儿童价标准：年龄2-12周岁（不含），按儿童价格收取 成人+儿童最多支持999人</view>
+
+  <view class='joinactive-foot'>
+    <view class='totle'>总额： <text> ￥ {{totle}}</text></view>
+    <view class='tel' bindtap='makePhoneCall'>电话联系</view>
+    <view class='yuding'>预定</view>
+  </view>
+</view>

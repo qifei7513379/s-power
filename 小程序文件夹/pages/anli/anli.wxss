@@ -1,0 +1,9 @@
+.hui{height: 20rpx;width: 100%;background: #eaeaea}
+.collect{background: url(http://yutingdq.gotoip4.com/xpx/index_collect.png) no-repeat;background-size: 27rpx 26rpx}
+.on{background: url(http://yutingdq.gotoip4.com/xpx/index_collect_on.png) no-repeat;background-size: 27rpx 26rpx}
+.bt{font-size: 30rpx;color: #2c2c2c;font-weight: 500;margin: 30rpx 0;text-overflow: ellipsis;overflow: hidden;white-space: nowrap}
+.a2{font-size: 24rpx;color: #7c7c7c;margin-bottom: 30rpx}
+image{width: 100%}
+.a1{color: #7c7c7c;font-size: 24rpx;line-height: 60rpx;margin-bottom: 20rpx}
+.anli-item{position: relative}
+.a3{position: absolute;padding-left: 30rpx;bottom: 50rpx;right: 35rpx;font-size: 24rpx;color: #7c7c7c;line-height: 30rpx}

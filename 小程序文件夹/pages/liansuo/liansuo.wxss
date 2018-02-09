@@ -1,0 +1,12 @@
+.hui{height: 20rpx;width: 100%;background: #eaeaea}
+.collect{background: url(http://yutingdq.gotoip4.com/xpx/index_collect.png) no-repeat;background-size: 27rpx 26rpx}
+.on{background: url(http://yutingdq.gotoip4.com/xpx/index_collect_on.png) no-repeat;background-size: 27rpx 26rpx}
+.bt{font-size: 30rpx;color: #2c2c2c;font-weight: 500;margin: 30rpx 0;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 80%}
+.a2{font-size: 24rpx;color: #7c7c7c;margin-bottom: 30rpx}
+image{width: 100%;display: block}
+.a1{color: #7c7c7c;font-size: 24rpx;line-height: 60rpx;margin-bottom: 20rpx}
+.anli-item{position: relative}
+.a3{position: absolute;padding-left: 30rpx;bottom: 50rpx;right: 35rpx;font-size: 24rpx;color: #7c7c7c;line-height: 30rpx}
+.pos{position: absolute;top: 33rpx;right: 30rpx;font-size: 24rpx;color: #4e4e4e;background: url(http://yutingdq.gotoip4.com/xpx/pos.png) no-repeat;background-size: 25rpx auto;padding-left: 28rpx}
+picker{height: 80rpx;border-top: 1px solid #e1e1e1;border-bottom: 1px solid #e1e1e1;font-size: 24rpx;color: #4e4e4e;}
+.picker{background: url(http://yutingdq.gotoip4.com/xpx/pos1.png) no-repeat;background-size: 110rpx 37rpx;width: 110rpx;text-align: center;height: 37rpx;line-height: 37rpx;margin-top: 20rpx;margin-left: 30rpx}

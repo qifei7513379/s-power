@@ -1,3 +1,14 @@
-<view>
-  案例
+<view class='anli'>
+  <view wx:for="{{index_news}}" class='anli-item' wx:key="{{uniqu}}">       
+    <navigator url='../anlidetail/anlidetail' class='tong'>
+      <view class='bt'>{{item.bt}}</view>
+      <view class='a2'>{{item.a2}}</view>
+      <image src='{{item.img}}'></image>                        
+    </navigator>
+    <view class='tong index_video_f'>
+      <view class='a1'>{{item.a1}}</view>
+      <view class='fr a3 {{item.coll?"on":"collect"}}' data-index="{{index}}" bindtap='colltab'>收藏</view>
+    </view>
+    <view class='hui'></view>        
+  </view>
 </view>

@@ -3,9 +3,13 @@
     <view url='' class='{{_num==1?"on":""}}' bindtap='clicktab' data-num="1" data-temp="news">新闻</view>
     <view url='' class='{{_num==2?"on":""}}' bindtap='clicktab' data-num="2" data-temp="video">视频</view>
     <view url='' class='{{_num==3?"on":""}}' bindtap='clicktab' data-num="3" data-temp="active">活动</view>
-    <view url='' class='{{_num==4?"on":""}}' bindtap='clicktab' data-num="4" data-temp="3d">3D改装</view>
+    <view>
+      <!--跳外链  -->
+      <web-view src="">3D改装</web-view>
+    </view>
     <navigator url='/pages/search/search' class='index-ss'><image src='../../images/index-ss.png'></image></navigator>
 </view>
+<view class='index-nav-zhanwei'></view>
 
 <!--模块  -->
 <import src="../template-wenhua/template-wenhua.wxml"/>

@@ -1,0 +1,19 @@
+<view class='anlidetail'>
+  <image src='{{img}}'></image>
+  <view class='bt'>{{bt}}</view>
+  <view class='a2'>{{a2}}</view>
+  <view class='anlidetail-foot'>
+    <navigator class='shopcart' url='../pay/pay'>{{num}}</navigator>
+    <view class='fr a3 {{coll?"on":"collect"}}' bindtap='colltab'>收藏</view>
+    <view class='tel' bindtap='makePhoneCall'>电话联系</view>
+    <view class='goumai' bindtap='tanchu'>购买</view>
+  </view>
+
+  <!--模块  -->
+  <import src="../template-shopcart/template-shopcart.wxml"/>
+  <scroll-view scroll-y class="{{tanchu?'container':'nocon'}}" >
+      <template is="shopcart" data="{{shopcartlist}}"></template>
+      <view class='shopcartzhanwei'></view>
+  </scroll-view>
+  <view class='{{tanchu?"jiantou":"nojia"}}' bindtap='tanchu'>  </view>
+</view>

@@ -10,6 +10,8 @@ Page({
   // 数据类js
   data: {
     // 首页新闻列表
+    array: ['南昌', '九江', '赣州', '云端'],
+    index:0,
     index_news: [{
       a: "",
       img: "../../images/index-news.jpg",
@@ -17,6 +19,7 @@ Page({
       bool: true,
       a1: "/#性能/ 22小时前",
       a2: "和名字一样，Insane Speed汽车改装店有些疯狂，它打造了许多高性能的作品，从1000多马力的EVO和Supra到双涡轮增压的兰博基尼。",
+      pos:"南昌",
       uniqu: 0,
       index_dz: "index_dz",
       dz: "21",
@@ -30,6 +33,7 @@ Page({
       a1: "/#性能/ 22小时前",
       a2: "和名字一样，Insane Speed汽车改装店有些疯狂，它打造了许多高性能的作品，从1000多马力的EVO和Supra到双涡轮增压的兰博基尼。",
       uniqu: 1,
+      pos: "九江",
       index_dz: "",
       dz: "21",
       index_news_com: "",
@@ -41,9 +45,10 @@ Page({
   onLoad: function () {
 
   },
-  fenxiang1: function () {
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      fenxiang: !this.data.fenxiang
+      index: e.detail.value
     })
   },
   fx_t: function () {

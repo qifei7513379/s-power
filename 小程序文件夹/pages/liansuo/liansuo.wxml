@@ -1,3 +1,18 @@
-<view>
-  连锁
+<view class='liansuo'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+  <view wx:for="{{index_news}}" class='anli-item' wx:key="{{uniqu}}">       
+    <navigator url='../newsdetail/newsdetail' class='tong'>
+      <view class='bt'>{{item.bt}}</view>
+      <view class='a2'>{{item.a2}}</view>
+    </navigator>
+    <navigator url='../newsdetail/newsdetail' >
+      <image src='{{item.img}}'></image>                        
+    </navigator>
+    <view class='pos'>{{item.pos}}</view>
+    <view class='hui'></view>        
+  </view>
 </view>

@@ -1,3 +1,21 @@
-<view>
-  我的空间
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+    <view class='usershow'>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class='namewrapper'>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class='{{gender?"userinfo-gender1":"userinfo-gender2"}}'></text>
+      </view>      
+    </view> 
+
+    <view class='userrevise'>
+        <navigator class='ziliao' url='../ziliao/ziliao'>编辑资料</navigator>
+        <navigator class='chilun' url='../peizhi/peizhi'></navigator>
+    </view>
+  </view>
+  <view class="usermotto">
+    
+  </view>
 </view>

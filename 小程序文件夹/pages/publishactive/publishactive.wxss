@@ -1,0 +1,15 @@
+/* pages/publishactive/publishactive.wxss */
+.c1 image{width: 108rpx;height: 108rpx;display: block;margin-top: 30rpx;margin-left: 30rpx}
+.c1{height: 168rpx;width: 100%;border-top: 2px solid #eaeaea}
+.hui{width: 100%;height: 20rpx;background: #eaeaea}
+.c2{margin: 0 30rpx;display: flex;}
+.c2 label{margin-right: 20rpx;flex: 0 0 120rpx;height: 100rpx;line-height: 100rpx;font-size: 30rpx;color: #3b3b3b;text-align: justify;text-align-last: justify}
+.c2 input{flex: 1;height: 100rpx;font-size: 24rpx;display: block}
+.c3{margin: 0 30rpx;display: flex;border-bottom: 1px solid #e1e1e1}
+.c3 label{margin-right: 20rpx;flex: 0 0 120rpx;height: 100rpx;line-height: 100rpx;font-size: 30rpx;color: #3b3b3b;text-align: justify;text-align-last: justify}
+.c3 input{flex: 1;height: 100rpx;font-size: 24rpx;display: block}
+picker{font-size: 24rpx;line-height: 100rpx;color: #999}
+picker text{margin-right: 30rpx;margin-left:30rpx}
+picker text:first-child{margin-left: 0}
+.c3 textarea{padding: 40rpx 0;font-size: 24rpx}
+button{margin: 40rpx 70rpx 50rpx 70rpx;background: #ffba00;color: white;font-size: 30rpx;height: 100rpx;border-radius: 50rpx;line-height: 100rpx}

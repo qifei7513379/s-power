@@ -1,5 +1,12 @@
-<view>
-  搜索
-
-
+<view class='search'>
+  <view class='input-wrapper'>
+    <label></label>
+    <input placeholder='搜索标签' class='search-input'/>
+  </view>
+  <view class='label'>
+      <view class='label-title'> <text>—</text> 热门标签 <text>—</text></view>
+      <text>启发与灵感</text><text>JDM</text><text>不务正业</text><text>中文字幕</text>
+      <text>Nissan GT-R</text><text>Porsche 911</text><text>Porsche</text><text>争分夺秒</text>
+      <text>无宽不欢</text><text>Nissan</text><text>BMW</text>
+  </view>
 </view> 

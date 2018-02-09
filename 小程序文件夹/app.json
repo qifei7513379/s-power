@@ -5,7 +5,17 @@
     "pages/liansuo/liansuo",
     "pages/private/private",
     "pages/search/search",
-    "pages/detail/detail"
+    "pages/newsdetail/newsdetail",
+    "pages/videodetail/videodetail",
+    "pages/activedetail/activedetail",
+    "pages/publishactive/publishactive",
+    "pages/searchresult/searchresult",
+    "pages/talk/talk",
+    "pages/joinactive/joinactive",
+    "pages/anlidetail/anlidetail",
+    "pages/pay/pay",
+    "pages/ziliao/ziliao",
+    "pages/peizhi/peizhi"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,20 @@
+/* pages/anlidetail/anlidetail.wxss */
+.anlidetail-foot{position: fixed;bottom: 0;left: 0;width: 100%;height: 88rpx;border: 1px solid #e1e1e1;display: flex;z-index: 999;background: white}
+.collect{background: url(http://yutingdq.gotoip4.com/xpx/index_collect.png) no-repeat;background-size: 29rpx 29rpx;flex: 0 0 110rpx;background-position: 50% 25%;border-left: 1px solid #e1e1e1;color: #7c7c7c;font-size: 20rpx;text-align: center;line-height: 120rpx;}
+.on{background: url(http://yutingdq.gotoip4.com/xpx/index_collect_on.png) no-repeat;background-size: 29rpx 29rpx;flex: 0 0 110rpx;background-position: 50% 25%;border-left: 1px solid #e1e1e1;color: #7c7c7c;font-size: 20rpx;text-align: center;line-height: 120rpx;}
+.tel{flex: 0 0 110rpx;border-left: 1px solid #e1e1e1;color: #7c7c7c;font-size: 20rpx;text-align: center;line-height: 120rpx;background: url(http://yutingdq.gotoip4.com/xpx/tel.png) no-repeat;background-size: 28rpx 31rpx;background-position: 50% 20%}
+.goumai{width: 345rpx;background: #f89e00;color: white;font-size: 30rpx;line-height: 88rpx;text-align: center;}
+.shopcart{flex: 1;background: url(http://yutingdq.gotoip4.com/xpx/shopcart.png) no-repeat;background-size: 45rpx auto;background-position: 50% 50%;color: #f85100;text-align: center;text-indent: 50rpx;font-size: 30rpx}
+.anlidetail image{width: 100%;display: block}
+.bt{font-size: 30rpx;color: #2c2c2c;margin:30rpx}
+.a2{font-size: 24rpx;color: #7c7c7c;margin: 30rpx}
+.container{width: 550rpx;position: fixed;right: 0;top: 0;height: 100%;background: #f5f5f5}
+.nocon{width: 550rpx;position: fixed;right: -550rpx;top: 0;height: 100%;background: #f5f5f5}
+.shopcart-item{margin: 30rpx}
+.shopcart-item image{width: 180rpx;height: 180rpx;display: inline-block;vertical-align: top}
+.titlewrapper{width: 300rpx;display: inline-block;margin-left: 10rpx;background: url(http://yutingdq.gotoip4.com/xpx/addcart.png) no-repeat #fafafa;height: 180rpx;background-position: 90% 85%;background-size: 40rpx auto}
+.titlewrapper view:nth-child(1){font-size: 30rpx;color: #2c2c2c;line-height: 40rpx;height: 80rpx;display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;margin-bottom: 50rpx;}
+.titlewrapper view:nth-child(2){color: #ec5e2a;font-size: 30rpx}
+.jiantou {width: 40rpx;height: 90rpx;position: fixed;right: 550rpx;background: url(http://yutingdq.gotoip4.com/xpx/jiantou.png) no-repeat #efefef;background-size: 16rpx 28rpx;background-position: 50% 50%;top: 45%}
+.nojia {width: 40rpx;height: 90rpx;position: fixed;right: -40rpx;background: url(http://yutingdq.gotoip4.com/xpx/jiantou.png) no-repeat #efefef;background-size: 16rpx 28rpx;background-position: 50% 50%;top: 45%}
+.shopcartzhanwei{height: 88rpx}

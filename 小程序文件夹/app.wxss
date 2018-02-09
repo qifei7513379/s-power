@@ -8,13 +8,13 @@
 .jd{width:100%;display:block;overflow: hidden;white-space: nowrap;-o-text-overflow: ellipsis;text-overflow: ellipsis;}
 .tong{padding: 0 33rpx;overflow: hidden;}
 /* 首页导航 */
-.index-nav{background: #2f2f2f;display: -webkit-box;display: -webkit-flex;display: flex;padding: 0 10% 0 0;}
+.index-nav{background: #2f2f2f;display: -webkit-box;display: -webkit-flex;display: flex;padding: 0 10% 0 0;position: fixed;top: 0;left: 0;width: 100%;z-index: 9999}
 .index-nav>view{font-size: 30rpx;color: #b2b2b2;line-height: 98rpx;-webkit-flex:1;flex:1;-webkit-box-flex:1;text-align: center;display: block;position: relative;}
 .index-nav .on{color: #ffffff;}
 .index-nav .on:after{content:"";display: block;width: 20rpx;height: 4rpx;background: #ffba00;border-radius: 1rpx;position: absolute;bottom: 18rpx;left: 50%;margin-left: -10rpx;}
-.index-ss{position: absolute !important;top: 0;right: 0;width: 10%;height: 98rpx;}
+.index-ss{flex: 0 0 10%;height: 98rpx;}
 .index-ss image{width: 26rpx;height: 26rpx;display: block;margin: 36rpx auto 0 auto;}
-
+.index-nav-zhanwei{height: 98rpx;width: 100%}
 
 
 

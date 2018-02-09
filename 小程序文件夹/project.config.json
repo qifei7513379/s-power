@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.6.0",
-	"appid": "touristappid",
-	"projectname": "%E6%B1%BD%E8%BD%A6%E9%A1%B9%E7%9B%AE",
+	"appid": "wx7a999d6c7172bc35",
+	"projectname": "dddd",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -20,9 +20,90 @@
 			"current": -1,
 			"list": []
 		},
-		"miniprogram": {
-			"current": -1,
+		"game": {
 			"list": []
+		},
+		"miniprogram": {
+			"current": 12,
+			"list": [
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "搜索结果",
+					"pathName": "pages/searchresult/searchresult",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "新闻详情",
+					"pathName": "pages/newsdetail/newsdetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频详情",
+					"pathName": "pages/videodetail/videodetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "评论",
+					"pathName": "pages/talk/talk",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "活动详情",
+					"pathName": "pages/activedetail/activedetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "参加活动",
+					"pathName": "pages/joinactive/joinactive",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布活动",
+					"pathName": "pages/publishactive/publishactive",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "案例列表",
+					"pathName": "pages/anli/anli",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "案例详情",
+					"pathName": "pages/anlidetail/anlidetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "支付",
+					"pathName": "pages/pay/pay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "连锁",
+					"pathName": "pages/liansuo/liansuo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/private/private"
+				}
+			]
 		}
 	}
 }

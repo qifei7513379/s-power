@@ -1,0 +1,5 @@
+.input-wrapper{width: 100%;height: 120rpx;background: #f5f5f5;overflow: hidden}
+.search-input{width: 600rpx;height: 80rpx;display: inline-block;border-top-right-radius: 40rpx;border-bottom-right-radius: 40rpx;margin-top: 20rpx;font-size: 30rpx;background: white}
+.input-wrapper label{height: 80rpx;display: inline-block;width: 65rpx;background: url(http://yutingdq.gotoip4.com/xpx/search.png) no-repeat white;background-size: 26rpx 26rpx;background-position: 30rpx 50%;vertical-align: top;margin-top: 20rpx;border-top-left-radius: 40rpx;border-bottom-left-radius: 40rpx;margin-left: 40rpx}
+.label-title{font-size: 30rpx;color: #999;text-align: center;margin: 70rpx 0 40rpx 0}
+.label>text{font-size: 24rpx;color: #333;padding: 0 33rpx;display: inline-block;height: 70rpx;line-height: 70rpx;background: #f5f5f5;border-radius: 35rpx;margin-left: 25rpx;margin-bottom: 25rpx}

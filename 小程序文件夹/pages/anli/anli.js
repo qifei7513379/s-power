@@ -41,9 +41,12 @@ Page({
   onLoad: function () {
 
   },
-  fenxiang1: function () {
+  colltab: function (e) {
+    var index = e.target.dataset.index;
+    this.data.index_news[index].coll = !this.data.index_news[index].coll
+    var index_news = this.data.index_news;
     this.setData({
-      fenxiang: !this.data.fenxiang
+      index_news: index_news
     })
   },
   fx_t: function () {

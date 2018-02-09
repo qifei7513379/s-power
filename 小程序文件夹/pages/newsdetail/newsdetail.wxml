@@ -1,0 +1,35 @@
+<view class='newsdetail'>
+  <view class='info-a'>
+    <image src='{{src}}'></image>
+    <view class='title'>{{title}}</view>
+    <view class='sign'>{{sign}}<text wx:if="{{bool}}">推荐</text></view>
+    <view class='content'>{{content}}</view>
+    <view class='zhong-wrapper'>
+      <view class='zhong'>
+        <text class='a4'>分享</text>
+        <view class='share-1'><button open-type='share'></button></view>
+        <view class='share-2'><button open-type='share'></button></view>
+      </view>    
+    </view>
+    <view class='hui'></view>
+    <view class='comment'>
+        <view class='comment-title'>评论 <text>{{length}}条</text>  </view>
+        <view wx:key="uniqu" wx:for="{{comment}}" class='comment-list'>
+          <image src='{{item.avatar}}'></image>
+          <view class='itemwrapper'>
+            <view class='username'>{{item.username}}</view>
+            <view class='model'>{{item.model}}</view>
+            <view class='content'>{{item.content}}</view>
+            <view class='time'>{{item.time}}</view>          
+          </view>          
+          <view class='zan {{item.coll?"on":""}}' data-index="{{index}}" bindtap='dz'>点赞 </view>
+        </view>
+    </view>
+    <view class='comment-foot-zhanwei'></view>
+    <view class='comment-foot'>
+        <navigator url='../talk/talk'>有何高见展开讲讲</navigator>
+        <text class="zantotle"></text><text class='zannum'>{{zannum}}</text>
+        <text class='{{collet?"collet":"no"}}' bindtap='col'></text>
+    </view>
+  </view>
+</view>

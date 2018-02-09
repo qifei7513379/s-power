@@ -1,0 +1,43 @@
+<view class='publishactive'>
+  <view class='c1'>
+    <!-- 请调用小程序自带的文件上传wx.chooseImage（），需要填写上传服务器路径 -->
+    <image src='http://yutingdq.gotoip4.com/xpx/uploadimg.png'></image>
+  </view>
+  <view class='hui'></view>
+  <view class='c2'>
+    <label>标题</label><input placeholder='请输入标题2-35个字'></input>
+  </view>
+  <view class='hui'></view>
+  <view class='c3'>
+    <label>时间</label><input placeholder='请输入活动时间'></input>
+  </view>
+  <view class='c3'>
+    <label>地点</label>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        <text>{{region[0]}}</text>  >  <text>{{region[1]}}</text>  >  <text>{{region[2]}}</text>  >
+      </view>
+    </picker>
+  </view>
+  <view class='c3'>
+    <label>主办方</label><input placeholder='请输入你的公司名称'></input>
+  </view>
+  <view class='c3'>
+    <label>成人价格</label><input placeholder='请输入你的活动成人价格'></input>
+  </view>
+  <view class='c2'>
+    <label>儿童价格</label><input placeholder='请输入你的活动儿童价格'></input>
+  </view>
+  <view class='hui'></view>
+  <view class='c3'>
+    <label>联系人</label><input placeholder='如：王先生'></input>
+  </view>
+  <view class='c3'>
+    <label>联系电话</label><input placeholder='请输入联系电话'></input>
+  </view>
+  <view class='c3'>
+    <label>简介</label><textarea></textarea>
+  </view>
+  <button>发布活动</button>
+
+</view>

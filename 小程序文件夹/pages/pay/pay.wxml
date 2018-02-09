@@ -1,0 +1,25 @@
+<view class='pay'>
+  <view class='pay-list' wx:key="{{item.uniqu}}" wx:for="{{paylist}}" data-index="{{index}}" bindchange="checkboxChange">
+    <checkbox-group bindchange="checkboxChange" data-id="{{item.id}}" data-index="{{index}}">
+      <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
+    </checkbox-group> 
+    <image src='{{item.img}}'></image>
+    <view class='pricewrapper'>
+      <view>{{item.title}}</view>
+      <view>￥{{item.price}}</view>
+    </view>
+    <view class='count'><view bindtap='jian' data-index="{{index}}">-</view><text>{{item.cou}}</text><view bindtap='jia' data-index="{{index}}">+</view></view>
+  </view>
+  <view class='pay-foot-zhanwei'></view>
+  <view class='pay-foot'>
+    <checkbox-group bindchange="checkboxChangeTotle">
+      <view class='clectall'><checkbox value="{{item.name}}" checked="{{all_checked}}"/>全部</view>  
+    </checkbox-group>  
+    <view class='totle'>合计： <text>￥{{totle}}</text> </view>
+    <view class='jiesuan'>结算</view>
+  </view>
+
+
+
+
+</view>

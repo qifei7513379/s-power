@@ -1,0 +1,9 @@
+<view class='searchresult'>
+  <view class='result-list'>
+    <navigator wx:for="{{result}}" wx:key="nique" class='result-item' url='../newsdetail/newsdetail'>
+      <image src='{{item.src}}'></image>
+      <view>{{item.title}}</view>
+      <text>{{item.time}}</text>
+    </navigator>
+  </view>
+</view>

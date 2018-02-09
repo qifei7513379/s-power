@@ -1,0 +1,43 @@
+.share-1{background: url(http://yutingdq.gotoip4.com/xpx/share-11.png) no-repeat;background-size: 62rpx 62rpx;width: 62rpx;height: 62rpx;display: inline-block;vertical-align: top;margin: -4rpx 20rpx 0;position: relative}
+.share-2{background: url(http://yutingdq.gotoip4.com/xpx/share-22.png) no-repeat;background-size: 62rpx 62rpx;width: 62rpx;height: 62rpx;display: inline-block;vertical-align: top;margin-top: -4rpx;position: relative}
+.share-1 button{position: absolute;display: block;width: 100%;height: 100%;opacity: 0}
+.share-2 button{position: absolute;display: block;width: 100%;height: 100%;opacity: 0}
+.zhong-wrapper{text-align: center;margin-top: 60rpx;margin-bottom: 40rpx}
+.info-a>video{width: 100%;height: 425rpx;display: block;border: none}
+.video-bg1{background: url(http://yutingdq.gotoip4.com/xpx/video-bg1.png) no-repeat;background-size: 100% 100%;overflow: hidden}
+.video-bg1>.title{font-size: 30rpx;color: white;padding: 10rpx 30rpx}
+.video-bg1>.sign{font-size: 24rpx;color: #b8b7b8;padding: 10rpx 30rpx}
+.video-bg1>.content{font-size: 24rpx;color: #b8b7b8;padding:10rpx 30rpx}
+.video-bg1 .zhong{font-size: 24rpx;color: #b8b7b8;display: inline-block;}
+.video-bg1 .zhong .a4{display: inline-block;line-height: 62rpx;height: 62rpx;}
+.hui{width: 100%;height: 20rpx;background: #34312f}
+.comment{background: url(http://yutingdq.gotoip4.com/xpx/video-bg3.png) no-repeat;background-size: 100% 100%;overflow: hidden;}
+.comment-title{line-height: 66rpx;margin: 0 30rpx;border-bottom: 2rpx solid #34312f;font-size: 30rpx;color: white}
+.comment-title text{font-size: 24rpx;color: #b0b0b0}
+.comment-list{padding: 30rpx 0;border-bottom: 1px solid #45413e;position: relative;margin: 0 30rpx}
+.comment-list image{width: 72rpx;height: 72rpx;border-radius: 50%;display: inline-block;vertical-align: top}
+.itemwrapper{display: inline-block;width: 570rpx;margin-left: 20rpx}
+.comment-foot{width: 100%;height: 110rpx;position: fixed;bottom: 0;left: 0;background: #252322}
+.comment-foot navigator{width: 320rpx;height: 70rpx;background: #34312f;margin-top: 20rpx;margin-left: 20rpx;border-radius: 35rpx;font-size: 26rpx;padding-left: 50rpx;display: inline-block;line-height: 70rpx;color: #959595}
+.comment-foot-zhanwei{width: 100%;height: 110rpx}
+.zan{position: absolute;top: 30rpx;right: 0rpx;font-size: 24rpx;color: #959595;width: 100rpx;height: 50rpx}
+.itemwrapper .username{font-size: 24rpx;color: #b7bbc0;}
+.itemwrapper .model{font-size: 20rpx;color: #4f93e2}
+.itemwrapper .content{font-size: 30rpx;color: white;margin: 10rpx 0}
+.itemwrapper .time{font-size: 22rpx;color: #959595}
+.zan{background: url(http://yutingdq.gotoip4.com/xpx/video_like1.png) no-repeat;background-size: 27rpx 26rpx;display: inline-block;background-position: 60rpx 2rpx}
+.comment-list .on{background: url(http://yutingdq.gotoip4.com/xpx/index_news_like2.png) no-repeat;background-size: 27rpx 26rpx;background-position: 60rpx 2rpx}
+.zantotle{background: url(http://yutingdq.gotoip4.com/xpx/video_like1.png) no-repeat;background-size: 35rpx 32rpx;display: inline-block;width: 40rpx;height: 35rpx;vertical-align: top;margin-top: 40rpx;margin-left: 190rpx;}
+.zannum{display: inline-block;vertical-align: top;font-size: 22rpx;margin-top: 24rpx;margin-right: 30rpx;color: #959595}
+.comment-foot .no{background: url(http://yutingdq.gotoip4.com/xpx/index_collect.png) no-repeat;background-size: 35rpx 34rpx;display: inline-block;width: 50rpx;height: 50rpx;vertical-align: top;margin-top: 40rpx}
+.comment-foot .collet{background: url(http://yutingdq.gotoip4.com/xpx/index_collect_on.png) no-repeat;background-size: 35rpx 34rpx;display: inline-block;width: 50rpx;height: 50rpx;vertical-align: top;margin-top: 40rpx}
+
+.video-list{background: url(http://yutingdq.gotoip4.com/xpx/video-bg2.png) no-repeat;background-size: 100% 100%;overflow: hidden;}
+.video-list-title{line-height: 66rpx;margin: 0 30rpx;border-bottom: 2rpx solid #34312f;font-size: 30rpx;color: white}
+
+.video-list-item{padding: 0 30rpx;margin-top: 30rpx}
+.video-list-item image{display: inline-block;width: 230rpx;height: 130rpx;vertical-align: top}
+.xingnengwrapper{width: 430rpx;height: 128rpx;display: inline-block;margin-left: 20rpx}
+.xingnengwrapper .title{font-size: 28rpx;color: #f4f4f5}
+.xingnengwrapper .time{font-size: 24rpx;color: #b8b7b8;margin-top: 15rpx}
+.more{text-align: center;font-size: 24rpx;color: #f4f4f5;line-height: 90rpx}

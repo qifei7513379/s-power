@@ -1,66 +1,74 @@
-//private.js
-// This is our App Service.
-// This is our data.
-var helloData = {
-  name: 'WeChat'
-}
+//index.js
+//获取应用实例
+const app = getApp()
 
-// Register a Page.
 Page({
-  // 数据类js
   data: {
-    // 首页新闻列表
-    index_news: [{
-      a: "",
-      img: "../../images/index-news.jpg",
-      bt: "轰下卡拉卡!轰下卡拉卡!轰下卡拉卡!轰下卡拉卡!轰下卡拉卡!",
-      bool: true,
-      a1: "/#性能/ 22小时前",
-      a2: "和名字一样，Insane Speed汽车改装店有些疯狂，它打造了许多高性能的作品，从1000多马力的EVO和Supra到双涡轮增压的兰博基尼。",
-      uniqu: 0,
-      index_dz: "index_dz",
-      dz: "21",
-      index_news_com: "",
-      index_news_for: ""
-    }, {
-      a: "",
-      img: "../../images/index-news.jpg",
-      bt: "轰下卡拉卡!轰下卡拉卡!轰下卡拉卡!轰下卡拉卡!轰下卡拉卡!",
-      bool: false,
-      a1: "/#性能/ 22小时前",
-      a2: "和名字一样，Insane Speed汽车改装店有些疯狂，它打造了许多高性能的作品，从1000多马力的EVO和Supra到双涡轮增压的兰博基尼。",
-      uniqu: 1,
-      index_dz: "",
-      dz: "21",
-      index_news_com: "",
-      index_news_for: ""
-    }],
-    fenxiang: false
+    userInfo: {},
+    gender:true
   },
-  // 当页面加载完成时间执行
+  //事件处理函数
+  // bindViewTap: function () {
+  //   wx.navigateTo({
+  //     url: '../logs/logs'
+  //   })
+  // },
   onLoad: function () {
-
-  },
-  fenxiang1: function () {
-    this.setData({
-      fenxiang: !this.data.fenxiang
+  //   if (app.globalData.userInfo) {
+  //     this.setData({
+  //       userInfo: app.globalData.userInfo,
+  //       hasUserInfo: true
+  //     })
+      
+  //   } else if (this.data.canIUse) {
+      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+      // 所以此处加入 callback 以防止这种情况
+    //   app.userInfoReadyCallback = res => {
+    //     this.setData({
+    //       userInfo: res.userInfo,
+    //       hasUserInfo: true
+    //     })
+    //   }
+    // } else {
+      // 在没有 open-type=getUserInfo 版本的兼容处理
+      // wx.getUserInfo({
+      //   success: res => {
+      //     app.globalData.userInfo = res.userInfo
+      //     this.setData({
+      //       userInfo: res.userInfo,
+      //       hasUserInfo: true
+      //     })
+          
+      //   }
+      // })
+    }
+    ,
+  onShow:function(){
+    var that=this;
+    if (that.data.userInfo.gender == 1) {
+      that.setData({
+        gender:true
+      })
+    }else{
+      that.setData({
+        gender: false
+      })
+    };  
+    wx.getUserInfo({
+      success: res => {
+        app.globalData.userInfo = res.userInfo
+        that.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
+      }
     })
+    console.log(this.data.userInfo)
   },
-  fx_t: function () {
-    this.setData({
-      fenxiang: !this.data.fenxiang
-    })
-  }
-});
-
-
-
-
-
-
-
-
-
-
-
-
+  // getUserInfo: function (e) {
+  //   this.setData({
+  //     userInfo: e.detail.userInfo,
+  //     hasUserInfo: true
+  //   })
+  // }
+})

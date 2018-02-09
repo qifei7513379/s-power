@@ -1,0 +1,4 @@
+.talk{border-top: 2px solid #efeff4}
+.talk-head{font-size: 30rpx;color: #3b3b3b;line-height: 100rpx;border-bottom: 1px solid #efeff4;margin: 0 30rpx}
+textarea{width: 100%;margin: 0 30rpx;font-size: 24rpx;padding: 20rpx 0;height: 350rpx;border-bottom: 1px solid #efeff4}
+button{margin: 70rpx;background: #ffba00;color: white;border-radius: 50rpx;height: 100rpx;line-height: 100rpx;border: none;font-size: 30rpx}

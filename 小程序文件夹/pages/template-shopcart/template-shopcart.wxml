@@ -1,0 +1,9 @@
+<template name="shopcart"> 
+    <view wx:for="{{shopcartlist}}" class='shopcart-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+      <image src='{{item.img}}'></image>
+      <view class='titlewrapper'>
+        <view>{{item.title}}</view>
+        <view>￥{{item.price}}</view>
+      </view>
+    </view>      
+</template>

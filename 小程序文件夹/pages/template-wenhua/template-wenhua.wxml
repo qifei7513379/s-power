@@ -1,10 +1,10 @@
 <template name="news">
     <!-- 首页新闻列表 -->
     <view wx:for="{{index_news}}" class='index_news' wx:key="{{uniqu}}">
-        <navigator url='../detail/detail'>
+        <navigator url='../newsdetail/newsdetail'>
             <image src='{{item.img}}'></image>
         </navigator>
-        <navigator url='../detail/detail' class='tong'>
+        <navigator url='../newsdetail/newsdetail' class='tong'>
             <view class='jd bt'>{{item.bt}}</view>
             <view class='a1'>{{item.a1}}
                 <span wx:if="{{item.bool}}">推荐</span>
@@ -12,10 +12,9 @@
             <view class='a2 ov'>{{item.a2}}</view>
         </navigator>
         <view class='tong index_news_f'>
-            <view class='index_news_like fl a3 {{item.index_dz}}' bindtap='index_dz' data-dz="{{item.dz}}">{{item.dz}}</view>
-            <navigator class='fl a3 comment' url='../detail/detail'>评论</navigator>
+            <view class='index_news_like fl a3 {{item.index_dz?"index_dz":""}}' bindtap='index_dz'  data-index="{{index}}">{{item.dz}}</view>
+            <navigator class='fl a3 comment' url='../newsdetail/newsdetail'>评论</navigator>
             <view class='fr a3 share' bindtap="fenxiang1">分享</view>
-            <navigator class='fr a3 forward' url='{{item.index_news_for}}'>转发</navigator>
         </view>
         <view class='index_h'></view>
     </view>
@@ -27,10 +26,12 @@
               <view class='a21'>
                 <image src='http://yutingdq.gotoip4.com/xpx/index_news_f1.jpg' class='img1'></image>
                 朋友圈
+                <button open-type='share'></button>
               </view>
               <view class='a21'>
                 <image src='http://yutingdq.gotoip4.com/xpx/index_news_f2.jpg' class='img2'></image>
                   微信好友
+                  <button open-type='share'></button>
               </view>
         </view>
     </block>
@@ -38,33 +39,41 @@
 
 <template name="video">
     <!--首页视频列表  -->
-    <view wx:for="{{index_news}}" class='index_news' wx:key="{{uniqu}}">
-        <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"  controls></video>
-        <navigator url='../detail/detail' class='tong'>
+    <view wx:for="{{index_news}}" class='index_video' wx:key="{{uniqu}}">
+        <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"  controls  ></video>
+        <navigator url='../videodetail/videodetail' class='tong'>
             <view class='jd bt'>{{item.bt}}</view>
             <view class='a1'>{{item.a1}}
                 <span wx:if="{{item.bool}}">推荐</span>
             </view>
             <view class='a2 ov'>{{item.a2}}</view>
         </navigator>
-        <view class='tong index_news_f'>
-            <view class='index_news_like fl a3 {{item.index_dz}}' bindtap='index_dz' data-dz="{{item.dz}}">{{item.dz}}</view>
-            <navigator class='fl a3 comment' url='../detail/detail'>评论</navigator>
-            <view class='fr a3 share' bindtap="fenxiang1">分享</view>
-            <navigator class='fr a3 forward' url='{{item.index_news_for}}'>转发</navigator>
+        <view class='tong index_video_f'>
+            <navigator class='fl a3 comment' url='../videodetail/videodetail'>评论</navigator>
+            <view class='fr'>
+               <text class='a4'>分享</text>
+               <view class='share-1'><button open-type='share'></button></view>
+               <view class='share-2'><button open-type='share'></button></view>
+            </view>
+            <view class='fr a3 {{item.coll?"on":"collect"}}' data-index="{{index}}" bindtap='colltab'>收藏</view>
         </view>
-        <view class='index_h'></view>
+        
     </view>
 </template>
 
 <template name="active">
-    <view class="title-box">
-        活动页面
+    <view wx:for="{{index_news}}" class='index_active' wx:key="{{uniqu}}">
+      <navigator url='../activedetail/activedetail'>
+        <image src='{{item.img}}'></image>
+        <view class='index_h'></view>
+        <view class='zhegai'>
+          <view class='price'>￥{{item.price}}</view>
+          <view class='title'>{{item.title}}</view>
+          <view class='info'> <text>{{item.time}}</text><text>{{item.add}}</text><text>{{item.personnum}}人已报名</text></view>
+        </view>
+      </navigator>        
     </view>
-</template>
-
-<template name="3d">
-    <view class="title-box">
-        3D改装
-    </view>
+    <navigator class='publishlogo' url='../publishactive/publishactive'>
+      <image src='http://yutingdq.gotoip4.com/xpx/publishlogo.png'></image>
+    </navigator>
 </template>

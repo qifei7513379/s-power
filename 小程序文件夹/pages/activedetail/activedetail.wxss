@@ -1,0 +1,16 @@
+.activeimg{width: 100%;display: block}
+.activedetail-1{margin: 30rpx 30rpx 0 30rpx;border-bottom: 1px solid #dcdcdc;padding-bottom: 30rpx;position: relative}
+.activedetail-1 .price{background: url(http://yutingdq.gotoip4.com/xpx/qipao1.png) no-repeat;background-size: 120rpx 56rpx;width: 120rpx;height: 56rpx;font-size: 24rpx;color: white;text-align: center;line-height: 56rpx;position: absolute;top: -60rpx}
+.activedetail-1 .title{font-size: 28rpx;color: #2c2c2c}
+.activedetail-1 .time{font-size: 24rpx;color: #7c7c7c;display: inline-block}
+.activedetail-1 .add{font-size: 24rpx;color: #7c7c7c;display: inline-block;margin: 0 10rpx}
+.activedetail-1 .num{font-size: 24rpx;color: #7c7c7c;display: inline-block}
+.activedetail-1 .coll{position: absolute;font-size: 24rpx;color: #7c7c7c;top: 55rpx;right: 0;background: url(http://yutingdq.gotoip4.com/xpx/index_collect.png) no-repeat;background-size: 27rpx 26rpx;padding-left: 30rpx;text-align: center;line-height: 40rpx;background-position: 0 50%}
+.activedetail-1 .on{position: absolute;font-size: 24rpx;color: #7c7c7c;top: 55rpx;right: 0;background: url(http://yutingdq.gotoip4.com/xpx/index_collect_on.png) no-repeat;background-size: 27rpx 26rpx;padding-left: 30rpx;text-align: center;line-height: 40rpx;background-position: 0 50%}
+
+.activedetail-2{padding: 30rpx;font-size: 24rpx;color: #2c2c2c;line-height: 48rpx}
+.activedetail-2 view text{color: #7c7c7c}
+.activedetail-foot{display: flex;position: fixed;bottom: 0;left: 0;width: 100%}
+.activedetail-foot navigator{flex: 1;font-size: 30rpx;line-height: 90rpx;text-align: center}
+.activedetail-foot navigator:nth-child(1){background: #ffba00;color: white;}
+.activedetail-foot navigator:nth-child(2){background: #d8d8d8;color: #474747;}
