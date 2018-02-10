@@ -1,0 +1,20 @@
+<template name="a"> 
+    <view wx:for="{{noticelist}}" class='notice-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+      <view class='title'>{{item.title}}</view>
+      <view class='content'>{{item.content}}</view>
+      <view class='time'>{{item.time}}</view>
+      <navigator url='../newsdetail/newsdetail'>查看详情>> </navigator>
+      <view class='hui'></view>
+    </view> 
+     
+</template>
+
+<template name="b"> 
+    <view wx:for="{{noticelist}}" class='notice-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+      <view class='title'>{{item.title}}</view>
+      <view class='content'>{{item.content}}</view>
+      <view class='time'>{{item.time}}</view>
+      <navigator url='../newsdetail/newsdetail'>查看详情>> </navigator>
+      <view class='hui'></view>
+    </view>       
+</template>

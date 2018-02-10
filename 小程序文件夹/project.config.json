@@ -24,7 +24,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 12,
+			"current": 21,
 			"list": [
 				{
 					"id": -1,
@@ -101,7 +101,62 @@
 				{
 					"id": -1,
 					"name": "我的",
-					"pathName": "pages/private/private"
+					"pathName": "pages/private/private",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "编辑资料",
+					"pathName": "pages/ziliao/ziliao",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "配置",
+					"pathName": "pages/peizhi/peizhi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加车",
+					"pathName": "pages/addcar/addcar",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加车",
+					"pathName": "pages/myactive/myactive",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "通知",
+					"pathName": "pages/mynotice/mynotice",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/myorder/myorder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/mycollect/mycollect",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "活动",
+					"pathName": "pages/myactive/myactive",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "体现",
+					"pathName": "pages/tixian/tixian",
+					"query": ""
 				}
 			]
 		}

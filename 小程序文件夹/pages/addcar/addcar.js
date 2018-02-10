@@ -1,23 +1,13 @@
-// pages/ziliao/ziliao.js
-
-const app = getApp()
+// pages/addcar/addcar.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
-    gender: "",
-    array:["男","女"],
-    index:""
+  
   },
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      index: e.detail.value
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -36,26 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
-    wx.getUserInfo({
-      success: res => {
-        app.globalData.userInfo = res.userInfo
-        that.setData({
-          userInfo: res.userInfo
-        })
-      }
-    })
-    var that = this;
-    if (that.data.userInfo.gender == 1) {
-      that.setData({
-        index: 0
-      })
-    } else {
-      that.setData({
-        index: 1
-      })
-    };
-    console.log(that.data.userInfo)
+  
   },
 
   /**

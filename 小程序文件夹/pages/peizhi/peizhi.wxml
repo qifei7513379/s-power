@@ -1,2 +1,5 @@
-<!--pages/peizhi/peizhi.wxml-->
-<text>pages/peizhi/peizhi.wxml</text>
+<view class='peizhi'>
+  <view class='hui'></view>
+  <view class='ziliao-item'><label>手机</label><input value='{{tel}}'></input></view>
+  <button>保存</button>
+</view>

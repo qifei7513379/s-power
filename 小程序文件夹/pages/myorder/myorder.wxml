@@ -1,0 +1,13 @@
+<view class='index-nav pos-r'>
+    <view url='' class='{{_num==1?"on":""}}' bindtap='clicktab' data-num="1" data-temp="a">待付款</view>
+    <view url='' class='{{_num==2?"on":""}}' bindtap='clicktab' data-num="2" data-temp="b">已付款</view>
+</view>
+
+<view class='index-nav-zhanwei'></view>
+<view class='hui'></view>
+<!--模块  -->
+<import src="../template-myorder/template-myorder.wxml"/>
+
+<view class="container">
+     <template is="{{temp}}" data="{{orderlist,readylist}}"></template>
+</view>

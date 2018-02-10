@@ -1,0 +1,28 @@
+<template name="a"> 
+    <view wx:for="{{orderlist}}" class='order-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+      <image src='{{item.img}}'></image>
+      <view class='wrapper'>
+        <view class='title'>{{item.title}}</view>
+        <view class='price'> ￥{{item.price}}</view>
+      </view>  
+      <view class='wrap-info'>
+        <view class='delete' data-index="{{index}}" bindtap='delete'>删除订单</view>
+        <navigator url='../pay/pay'>去付款 </navigator>
+      </view>         
+      <view class='hui'></view>
+    </view>     
+</template>
+
+<template name="b"> 
+    <view wx:for="{{readylist}}" class='order-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+      <image src='{{item.img}}'></image>
+      <view class='wrapper'>
+        <view class='title'>{{item.title}}</view>
+        <view class='price'> ￥{{item.price}}</view>
+      </view>   
+      <view class='wrap-info'>
+        <view class='look'>查看订单</view>
+      </view>         
+      <view class='hui'></view>
+    </view>        
+</template>

@@ -1,0 +1,14 @@
+<view class='index-nav pos-r'>
+    <view url='' class='{{_num==1?"on":""}}' bindtap='clicktab' data-num="1" data-temp="a">文化</view>
+    <view url='' class='{{_num==2?"on":""}}' bindtap='clicktab' data-num="2" data-temp="b">视频</view>
+    <view url='' class='{{_num==3?"on":""}}' bindtap='clicktab' data-num="3" data-temp="c">活动</view>
+    <view url='' class='{{_num==4?"on":""}}' bindtap='clicktab' data-num="4" data-temp="d">案例</view>
+</view>
+
+<view class='index-nav-zhanwei'></view>
+<!--模块  -->
+<import src="../template-mycollect/template-mycollect.wxml"/>
+
+<view class="container">
+     <template is="{{temp}}" data="{{collectlist}}"></template>
+</view>

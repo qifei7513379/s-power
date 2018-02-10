@@ -1,0 +1,11 @@
+.order-item{position: relative}
+.title{font-size: 30rpx;color: #2c2c2c;line-height: 40rpx;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.content{font-size: 24rpx;color: #7c7c7c;margin: 30rpx 0;margin: 30rpx;}
+.time{line-height: 80rpx;font-size: 24rpx;color: #7c7c7c;margin: 0 30rpx;border-top: 1px solid #e1e1e1}
+.order-item image{width: 180rpx;height: 180rpx;display: inline-block;vertical-align: top;margin-left: 30rpx}
+.wrapper{width: 480rpx;display: inline-block;margin-left: 30rpx;margin-bottom: 40rpx}
+.price{margin-top: 50rpx;font-size: 30rpx;color: #ec5e2a}
+.wrap-info{height: 95rpx;border-top: 1px solid #e1e1e1;margin: 0 30rpx;position: relative}
+.delete{position: absolute;color: #9d9d9d;font-size: 24rpx;padding: 15rpx 30rpx;border: 1px solid #e1e1e1;border-radius: 45rpx;top: 15rpx;right: 160rpx}
+.wrap-info navigator{position: absolute;color: #ec5e2a;font-size: 24rpx;padding: 15rpx 30rpx;border: 1px solid #ec5e2a;border-radius: 45rpx;top: 15rpx;display: block;right: 0rpx}
+.look{position: absolute;color: #9d9d9d;font-size: 24rpx;padding: 15rpx 30rpx;border: 1px solid #e1e1e1;border-radius: 45rpx;top: 15rpx;right: 0rpx}

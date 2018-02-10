@@ -5,7 +5,11 @@ const app = getApp()
 Page({
   data: {
     userInfo: {},
-    gender:true
+    gender:true,
+    carlist:[
+      {name:"奥迪 100",type:"1.8L"},
+      { name: "凤凰 28", type: "0.0L" }
+    ]
   },
   //事件处理函数
   // bindViewTap: function () {
@@ -43,6 +47,19 @@ Page({
       // })
     }
     ,
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../addcar/addcar'
+    })
+  },
+  deletecar:function(e){
+    var carlist = this.data.carlist;
+    var index = e.target.dataset.index;
+    carlist.splice(index,1)
+    this.setData({
+      carlist:carlist
+    })
+  },
   onShow:function(){
     var that=this;
     if (that.data.userInfo.gender == 1) {
@@ -63,7 +80,6 @@ Page({
         })
       }
     })
-    console.log(this.data.userInfo)
   },
   // getUserInfo: function (e) {
   //   this.setData({

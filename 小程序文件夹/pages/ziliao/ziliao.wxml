@@ -1,2 +1,14 @@
-<!--pages/ziliao/ziliao.wxml-->
-<text>pages/ziliao/ziliao.wxml</text>
+<view class='ziliao'>
+  <view class='hui'></view>
+  <view class='ziliao-item'><label>昵称</label><input value='{{userInfo.nickName}}'></input></view>
+  <view class='ziliao-item'><label>性别</label>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+  </view>
+  <view class='ziliao-item'><label>微信号</label><input placeholder='点击填写'></input></view>
+  <view class='ziliao-item'><label>银行卡号</label><input placeholder='点击填写'></input></view>
+  <button>保存</button>
+</view>

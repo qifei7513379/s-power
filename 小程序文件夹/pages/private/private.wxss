@@ -47,5 +47,19 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  width: 100%;
+  overflow: hidden
 }
+
+.carnolist{width: 711rpx;height: 188rpx;margin: 37rpx auto;display: block}
+.userlist{padding-bottom: 50rpx}
+.userlist navigator{margin: 0 30rpx;border-top: 1px solid #e1e1e1;line-height: 118rpx;position: relative}
+.userlist navigator image{position: absolute;width: 35rpx;right: 30rpx;height: 36rpx;top: 41rpx}
+.userlist navigator:last-child{border-bottom: 1px solid #e1e1e1}
+
+.carlist-item{width: 678rpx;height: 166rpx;background: url(http://yutingdq.gotoip4.com/xpx/carlist-bg.png) no-repeat;background-size: 100% 100%;margin: 53rpx auto;position: relative;color: white;overflow: hidden}
+.carlist-item view:first-child{font-size: 30rpx;margin: 30rpx}
+.carlist-item view:nth-child(2){font-size: 24rpx}
+.carlist-item view text{margin-left: 30rpx;margin-right: 30rpx;}
+.delete{position: absolute;top: 70rpx;right: 230rpx;background: url(http://yutingdq.gotoip4.com/xpx/delete.png) no-repeat;background-size: 100% 100%;width: 60rpx;height: 60rpx;}
+.addcar{position: absolute;top: 70rpx;right: 30rpx;font-size: 24rpx;border: 1px solid white;padding: 13rpx 30rpx;border-radius: 40rpx}

@@ -15,7 +15,13 @@
     "pages/anlidetail/anlidetail",
     "pages/pay/pay",
     "pages/ziliao/ziliao",
-    "pages/peizhi/peizhi"
+    "pages/peizhi/peizhi",
+    "pages/addcar/addcar",
+    "pages/myorder/myorder",
+    "pages/myactive/myactive",
+    "pages/mycollect/mycollect",
+    "pages/mynotice/mynotice",
+    "pages/tixian/tixian"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,12 @@
+
+.ziliao-item{margin: 0 30rpx;display: flex;border-bottom: 1px solid #e1e1e1}
+.ziliao-item label{line-height: 100rpx;flex: 0 0 150rpx;display: block;font-size: 30rpx;color: #3b3b3b;text-align: justify;text-align-last: justify;margin-right: 30rpx}
+.ziliao-item input{height: 100rpx;flex: 1;display: block;font-size: 30rpx}
+.ziliao-item picker{height: 100rpx;flex: 1;display: block;font-size: 30rpx;line-height: 100rpx}
+button{margin-top: 200rpx;background: #ffba00;color: white;width: 600rpx;height: 98rpx;border-radius: 49rpx;line-height: 98rpx;font-size: 30rpx}
+.info{width: 100%;height: 230rpx;background:#2e2e2e;overflow: hidden}
+.title{font-size: 28rpx;color: white;margin: 30rpx 0 30rpx 30rpx}
+.num{color: #888;font-size: 24rpx;margin-left: 30rpx}
+.price{color: #888;font-size: 24rpx;margin-left: 30rpx;margin-top: 30rpx}
+.price text{color: #ff9c00}
+.price text text{font-size: 36rpx}

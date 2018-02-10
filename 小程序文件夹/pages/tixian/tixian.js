@@ -7,89 +7,68 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
-    gender: "",
-    array:["男","女"],
-    index:""
+    title: "旅游 | 春天了别宅在家，约上驴友去旅行吧！",
+    price: 1688,
+    time: "4.8  周六 ",
+    zhuangtai: "a",
+    num: 34,
+    address: "@朱家古镇"
   },
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      index: e.detail.value
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
-    wx.getUserInfo({
-      success: res => {
-        app.globalData.userInfo = res.userInfo
-        that.setData({
-          userInfo: res.userInfo
-        })
-      }
-    })
-    var that = this;
-    if (that.data.userInfo.gender == 1) {
-      that.setData({
-        index: 0
-      })
-    } else {
-      that.setData({
-        index: 1
-      })
-    };
-    console.log(that.data.userInfo)
+
+ 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   }
 })

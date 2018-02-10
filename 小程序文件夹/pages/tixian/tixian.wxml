@@ -1,0 +1,14 @@
+<view class='ziliao'>
+  <view class='info'>
+    <view class='title'>{{title}}</view>
+    <view class='num'> <text>{{time}}</text><text>{{address}}</text><text>{{num}}人已报名</text> </view>
+    <view class='price'>总额： <text>￥  <text> {{price}}</text></text> </view>
+  </view>
+  <view class='ziliao-item'><label>姓名</label><input value=''></input></view>
+  <view class='ziliao-item'><label>电话</label>
+    <input value=''></input>
+  </view>
+  <view class='ziliao-item'><label>微信号</label><input placeholder='点击填写'></input></view>
+  <view class='ziliao-item'><label>到账银行卡</label><input placeholder='点击填写'></input></view>
+  <button>申请提现</button>
+</view>

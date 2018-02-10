@@ -1,0 +1,9 @@
+<view class='addcar'>
+  <view class='hui'></view>
+  <view class='ziliao-item'><label>车主姓名</label><input placeholder='请输入您的姓名'></input></view>
+  <view class='ziliao-item'><label>车主电话</label><input placeholder='请输入您的电话'></input></view>
+  <view class='ziliao-item'><label>车型</label><input placeholder='品牌+型号'></input></view>
+  <view class='ziliao-item'><label>车辆照片</label><image src='http://yutingdq.gotoip4.com/xpx/uploadimg.png'></image></view>
+  <view class='ziliao-item'><label>驾驶证照片</label><image src='http://yutingdq.gotoip4.com/xpx/uploadimg.png'></image></view>
+  <button>添加车辆</button>
+</view>

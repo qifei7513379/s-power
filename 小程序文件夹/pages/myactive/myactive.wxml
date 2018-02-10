@@ -1,0 +1,12 @@
+<view class='index-nav pos-r'>
+    <view url='' class='{{_num==1?"on":""}}' bindtap='clicktab' data-num="1" data-temp="a">我参与的</view>
+    <view url='' class='{{_num==2?"on":""}}' bindtap='clicktab' data-num="2" data-temp="b">我发布的</view>
+</view>
+
+<view class='index-nav-zhanwei'></view>
+<!--模块  -->
+<import src="../template-myactive/template-myactive.wxml"/>
+
+<view class="container">
+     <template is="{{temp}}" data="{{activelist,tixianlist}}"></template>
+</view>

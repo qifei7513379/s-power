@@ -1,0 +1,30 @@
+<template name="a"> 
+    <view class='a-zhanwei'></view>
+    <view wx:for="{{activelist}}" class='order-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+      <navigator url='../activedetail/activedetail'>
+         <image src='{{item.img}}'></image>
+        <view class='wrapper'>
+          <view class='title'>{{item.title}}</view>
+          <view class='price'> <text>{{item.time}}</text><text>{{item.address}}</text><text>{{item.num}}人已报名</text> </view>
+        </view>   
+        <view class='{{item.zhuangtai}}'></view>         
+      </navigator>  
+    </view>     
+</template>
+
+<template name="b"> 
+    <view wx:for="{{tixianlist}}" class='tixian-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+    <navigator url='../activedetail/activedetail'>
+      <image src='{{item.img}}' class='tixianimg'></image>
+        <view class='tixianwrapper'>
+          <view class='tixiantitle'>{{item.title}}</view>
+          <view class='tixianinfo'> <text>{{item.time}}</text><text>{{item.address}}</text><text>{{item.num}}人已报名</text> </view>
+          <view class='tixianprice'>总额： <text>￥  <text> {{item.price}}</text></text> </view>
+      </view>  
+      </navigator>  
+      <navigator url='../tixian/tixian' class='tixian-n'>申请提现</navigator>
+      <view class='delete' data-index="{{index}}" bindtap='delete'>删除</view>  
+      <view class='hui'></view>       
+    </view>        
+</template>
+

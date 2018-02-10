@@ -1,0 +1,5 @@
+.notice-item{position: relative}
+.title{font-size: 30rpx;color: #2c2c2c;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;margin: 30rpx;}
+.content{font-size: 24rpx;color: #7c7c7c;margin: 30rpx 0;margin: 30rpx;}
+.time{line-height: 80rpx;font-size: 24rpx;color: #7c7c7c;margin: 0 30rpx;border-top: 1px solid #e1e1e1}
+.notice-item navigator{position: absolute;font-size: 24rpx;color: #7c7c7c;bottom: 45rpx;right: 30rpx}

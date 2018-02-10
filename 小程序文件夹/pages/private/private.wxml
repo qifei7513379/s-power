@@ -16,6 +16,20 @@
     </view>
   </view>
   <view class="usermotto">
-    
+    <image wx:if="{{!carlist[0].name}}" src='http://yutingdq.gotoip4.com/xpx/carnolist.png' class='carnolist' bindtap='bindViewTap'> 获取头像昵称 </image>
+    <block wx:else>
+      <view class='carlist-item' wx:key="{{uniqu}}" wx:for="{{carlist}}" data-index="{{index}}">
+          <view>我的座驾</view>
+          <view> <text>{{item.name}}</text> {{item.type}} </view>
+          <view class='delete' bindtap='deletecar' data-index="{{index}}"></view>
+          <navigator class='addcar' url='../addcar/addcar'>添加车辆</navigator>
+      </view>
+    </block>    
+  </view>
+  <view class='userlist'>
+    <navigator url='../myorder/myorder'>我的订单<image src='http://yutingdq.gotoip4.com/xpx/cl1.png'></image></navigator>
+    <navigator url='../myactive/myactive'>我的活动<image src='http://yutingdq.gotoip4.com/xpx/cl2.png'></image></navigator>
+    <navigator url='../mycollect/mycollect'>我的收藏<image src='http://yutingdq.gotoip4.com/xpx/cl3.png'></image></navigator>
+    <navigator url='../mynotice/mynotice'>通知消息<image src='http://yutingdq.gotoip4.com/xpx/cl4.png'></image></navigator>
   </view>
 </view>

@@ -15,6 +15,7 @@
 .index-ss{flex: 0 0 10%;height: 98rpx;}
 .index-ss image{width: 26rpx;height: 26rpx;display: block;margin: 36rpx auto 0 auto;}
 .index-nav-zhanwei{height: 98rpx;width: 100%}
+.hui{width: 100%;height: 20rpx;background: #eaeaea}
 
 
 

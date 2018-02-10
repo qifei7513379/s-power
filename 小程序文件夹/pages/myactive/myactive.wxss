@@ -1,0 +1,29 @@
+.order-item{position: relative}
+.title{font-size: 30rpx;color: #2c2c2c;line-height: 40rpx;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.content{font-size: 24rpx;color: #7c7c7c;margin: 30rpx 0;margin: 30rpx;}
+.time{line-height: 80rpx;font-size: 24rpx;color: #7c7c7c;margin: 0 30rpx;border-top: 1px solid #e1e1e1}
+.order-item image{width: 275rpx;height: 155rpx;display: inline-block;vertical-align: top;margin-left: 30rpx}
+.wrapper{width: 395rpx;display: inline-block;margin-left: 30rpx;margin-bottom: 40rpx}
+.price{margin-top: 45rpx;font-size: 24rpx;color: #7c7c7c}
+.wrap-info{height: 95rpx;border-top: 1px solid #e1e1e1;margin: 0 30rpx;position: relative}
+
+.wrap-info navigator{position: absolute;color: #ec5e2a;font-size: 24rpx;padding: 15rpx 30rpx;border: 1px solid #ec5e2a;border-radius: 45rpx;top: 15rpx;display: block;right: 0rpx}
+.look{position: absolute;color: #9d9d9d;font-size: 24rpx;padding: 15rpx 30rpx;border: 1px solid #e1e1e1;border-radius: 45rpx;top: 15rpx;right: 0rpx}
+text{margin-right: 10rpx}
+.a{}
+.b{background:url(http://yutingdq.gotoip4.com/xpx/b.png) no-repeat;width: 94rpx;height: 70rpx;position: absolute;top: 0;left: 30rpx;background-size: 94rpx 70rpx;}
+.c{background:url(http://yutingdq.gotoip4.com/xpx/c.png) no-repeat;width: 94rpx;height: 70rpx;position: absolute;top: 0;left: 30rpx;background-size: 94rpx 70rpx;}
+.d{background:url(http://yutingdq.gotoip4.com/xpx/d.png) no-repeat;width: 94rpx;height: 70rpx;position: absolute;top: 0;left: 30rpx;background-size: 94rpx 70rpx;}
+.tixian-item .tixianimg{width: 100%;height: 425rpx;display: block}
+.a-zhanwei{height: 30rpx}
+.tixian-item{position: relative}
+.tixiantitle{font-size: 28rpx;color: #252322}
+.tixianinfo{font-size: 24rpx;color: #888;margin-top: 10rpx}
+.tixianprice{font-size: 24rpx;color: #888;margin-top: 20rpx}
+.tixianprice text{color: #ff6000}
+.tixianprice text text{font-size: 36rpx}
+.tixianwrapper{margin: 30rpx}
+.tixian-n{position: absolute;font-size: 24rpx;color: white;bottom: 50rpx;right: 200rpx;padding: 10rpx 30rpx 10rpx 60rpx;border-radius: 45rpx;background:url(http://yutingdq.gotoip4.com/xpx/bag.png) no-repeat #ffba00;background-size: 26rpx 26rpx;background-position: 20rpx 50%}
+.delete{position: absolute;color: #9d9d9d;font-size: 24rpx;border: 1px solid #e1e1e1;bottom: 50rpx;right: 30rpx;background:url(http://yutingdq.gotoip4.com/xpx/delete2.png) no-repeat;background-size: 27rpx 29rpx;padding: 10rpx 30rpx 10rpx 60rpx;border-radius: 45rpx;background-position: 20rpx 50%}
+
+

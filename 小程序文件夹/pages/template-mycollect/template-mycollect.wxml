@@ -1,0 +1,51 @@
+<template name="a"> 
+    <view wx:for="{{collectlist}}" class='order-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+      <navigator>
+         <image src='{{item.img}}'></image>
+        <view class='wrapper'>
+          <view class='title'>{{item.title}}</view>
+          <view class='price'>{{item.time}}</view>
+        </view>     
+      </navigator> 
+      <view class='delete' data-index="{{index}}" bindtap='delete'></view>         
+    </view>     
+</template>
+
+<template name="b"> 
+    <view wx:for="{{collectlist}}" class='order-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+     <navigator>
+         <image src='{{item.img}}'></image>
+        <view class='wrapper'>
+          <view class='title'>{{item.title}}</view>
+          <view class='price'>{{item.time}}</view>
+        </view>     
+      </navigator> 
+      <view class='delete' data-index="{{index}}" bindtap='delete'></view>         
+    </view>        
+</template>
+
+<template name="c"> 
+    <view wx:for="{{collectlist}}" class='order-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+     <navigator>
+         <image src='{{item.img}}'></image>
+        <view class='wrapper'>
+          <view class='title'>{{item.title}}</view>
+          <view class='price'>{{item.time}}</view>
+        </view>     
+      </navigator> 
+      <view class='delete' data-index="{{index}}" bindtap='delete'></view>       
+    </view>     
+</template>
+
+<template name="d"> 
+    <view wx:for="{{collectlist}}" class='order-item' wx:key="{{uniqu}}" bindtap='num' data-index="{{index}}">
+      <navigator>
+         <image src='{{item.img}}'></image>
+        <view class='wrapper'>
+          <view class='title'>{{item.title}}</view>
+          <view class='price'>{{item.time}}</view>
+        </view>     
+      </navigator> 
+      <view class='delete' data-index="{{index}}" bindtap='delete'></view>          
+    </view>        
+</template>
